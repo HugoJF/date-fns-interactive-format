@@ -24,7 +24,7 @@ export default function App() {
         <div className="mx-auto container flex flex-col">
             {/* Header */}
             <h1 className="mb-4 text-center text-5xl text-purple-400 font-black">
-                date-dns interactive format builder
+                date-fns interactive format builder
             </h1>
 
             {/* Top border hack */}
