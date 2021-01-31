@@ -13,7 +13,7 @@ export function Format({key, date, format, example, pattern = null, update}) {
 
     return <>
         <td className="py-2">
-            <p className="text-center text-lg font-bold font-mono text-purple-200 tracking-tight">
+            <p className="text-center text-lg font-bold font-mono text-gray-200 tracking-tight">
                 {pattern || format}
             </p>
         </td>
@@ -21,7 +21,7 @@ export function Format({key, date, format, example, pattern = null, update}) {
         <td className="py-2">
             {example && (
                 <div>
-                    <p className="text-center text-lg font-medium text-purple-200">
+                    <p className="text-center text-lg font-medium text-gray-200">
                         {example}
                     </p>
                 </div>
@@ -29,7 +29,7 @@ export function Format({key, date, format, example, pattern = null, update}) {
         </td>
 
         <td className="py-2">
-            <p className="text-center text-lg font-medium text-purple-200">
+            <p className="text-center text-lg font-medium text-gray-200">
                 {formatted}
             </p>
         </td>
