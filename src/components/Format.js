@@ -1,5 +1,6 @@
 import React, {useMemo} from "react";
 import * as fns from "date-fns";
+import {locale} from "../configs/locale";
 
 export function Format({key, date, format, example, pattern = null, update}) {
     const formatted = useMemo(() => {
@@ -7,7 +8,8 @@ export function Format({key, date, format, example, pattern = null, update}) {
 
         return fns.format(date, format, {
             useAdditionalDayOfYearTokens: true,
-            useAdditionalWeekYearTokens: true
+            useAdditionalWeekYearTokens: true,
+            locale
         })
     }, [update, date, format]);
 
