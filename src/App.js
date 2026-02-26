@@ -4,6 +4,7 @@ import useInterval from 'use-interval';
 import {FormatGroup} from "./components/FormatGroup";
 import {examples} from './configs/examples';
 import {formats} from "./configs/formats";
+import {locale} from "./configs/locale";
 import {FormatExample} from "./components/FormatExample";
 import {Sticky} from "./components/Sticky";
 
@@ -15,7 +16,7 @@ export default function App() {
 
     const formatted = useMemo(() => {
         try {
-            return fns.format(date, format);
+            return fns.format(date, format, {locale});
         } catch (e) {
             return '';
         }
